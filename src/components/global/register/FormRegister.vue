@@ -114,7 +114,7 @@ onMounted(() => {
               :placeholder="t('fristName')"
               required
               v-bind="first_name"
-              :class="{ 'is-invalid': errors.first_name }"
+              
             />
 
             <div class="invalid-feedback">{{ errors.first_name }}</div>
@@ -130,7 +130,7 @@ onMounted(() => {
               :placeholder="t('lastName')"
               required
               v-bind="last_name"
-              :class="{ 'is-invalid': errors.last_name }"
+              
             />
             <div class="invalid-feedback">{{ errors.last_name }}</div>
           </SimpleInput>
@@ -150,7 +150,7 @@ onMounted(() => {
             :placeholder="t('Email')"
             required
             v-bind="email"
-            :class="{ 'is-invalid': errors.email }"
+            
           />
           <div class="invalid-feedback">{{ errors.email }}</div>
         </SimpleInput>
@@ -184,7 +184,7 @@ onMounted(() => {
             :placeholder="t('password')"
             required
             v-bind="password"
-            :class="{ 'is-invalid': errors.password }"
+            
           /><img
             src="@/assets/images/global/icons/global/eye-svgrepo.svg"
             @click="switchVisibility"
@@ -209,7 +209,7 @@ onMounted(() => {
             :placeholder="t('Rewrite_new_password')"
             required
             v-bind="password_confirmation"
-            :class="{ 'is-invalid': errors.password_confirmation }"
+            
           /><img
             src="@/assets/images/global/icons/global/eye-svgrepo.svg"
             @click="switchVisibility2"

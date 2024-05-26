@@ -70,7 +70,7 @@ onMounted(() => {
             v-bind="login"
             :placeholder="t('Email')"
             required
-            :class="{ 'is-invalid': errors.login }"
+            
           />
 
           <div class="invalid-feedback">{{ errors.login }}</div>
@@ -86,7 +86,7 @@ onMounted(() => {
             :placeholder="t('password')"
             required
             v-bind="password"
-            :class="{ 'is-invalid': errors.password }"
+            
           />
           <img
             src="@/assets/images/global/icons/global/eye-svgrepo.svg"

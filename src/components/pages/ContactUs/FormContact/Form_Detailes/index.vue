@@ -55,7 +55,7 @@ onMounted(() => {
             id="exampleFormControlInput1"
             :placeholder="t('Name')"
             v-bind="name"
-            :class="{ 'is-invalid': errors.name }"
+            
           />
           <img
             src="../../../../../assets/images/global/icons/global/contactUs/user.svg"
@@ -67,19 +67,12 @@ onMounted(() => {
       </div>
       <div class="row p-0 m-0">
         <div class="col-md-6">
-          <SimpleInput>
-            <input
-              type="tel"
-              :placeholder="t('Mobile_number')"
-              v-bind="phone"
-              :class="{ 'is-invalid': errors.phone }"
-            /><img
-              src="../../../../../assets/images/global/icons/global/contactUs/mobile_form.svg"
-            />
-            <div class="invalid-feedback">
-              {{ errors.phone }}
-            </div></SimpleInput
-          >
+          <vue-tel-input
+            v-bind="phone"
+            mode="international"
+            
+          ></vue-tel-input>
+          <div class="invalid-feedback">{{ errors.phone }}</div>
         </div>
         <div class="col-md-6">
           <SimpleInput>
@@ -88,7 +81,7 @@ onMounted(() => {
               id="Email"
               :placeholder="t('Email')"
               v-bind="email"
-              :class="{ 'is-invalid': errors.email }"
+              
             /><img
               src="../../../../../assets/images/global/icons/global/contactUs/sms_form.svg"
             />
@@ -105,7 +98,7 @@ onMounted(() => {
             id="Subject"
             :placeholder="t('Subject')"
             v-bind="subject"
-            :class="{ 'is-invalid': errors.subject }"
+            
           /><img
             src="../../../../../assets/images/global/icons/global/contactUs/edit-2.svg"
           />
@@ -121,7 +114,7 @@ onMounted(() => {
             rows="3"
             :placeholder="t('message')"
             v-bind="message"
-            :class="{ 'is-invalid': errors.message }"
+            
           ></textarea
           ><img
             src="../../../../../assets/images/global/icons/global/contactUs/message-2.svg"

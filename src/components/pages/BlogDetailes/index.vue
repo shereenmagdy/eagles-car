@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted, computed } from "vue";
 import AOS from "aos";
 import { useI18n } from "vue-i18n";
 import { defineProps } from "vue";
@@ -11,16 +11,25 @@ let props = defineProps(["Blog", "Bloges"]);
 // data
 let data = ref();
 
-//i18n
+// i18n
 const { t } = useI18n();
-//onMounted
+
+// onMounted
 onMounted(() => {
-  //AOS
+  // AOS
   data.value = props.Bloges;
   AOS.init();
 });
+
+// computed property to format the date
+const formattedDate = computed(() => {
+  const date = new Date(props.Blog.created_at);
+  return date.toLocaleDateString(); // Adjust options as needed for your locale
+});
 </script>
-<template>
+
+
+  <template>
   <!--MostFaster-->
   <div class="MostFaster">
     <div class="container">
@@ -28,7 +37,7 @@ onMounted(() => {
         <div class="col-lg-8">
           <div class="date">
             <img src="../../../assets/images/global/icons/global/date.svg" />
-            <span> {{ Blog.created_at }}</span>
+            <span> {{ formattedDate }}</span>
           </div>
           <div class="image">
             <img
@@ -125,6 +134,7 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
 <style scoped lang="scss">
 @import "../../../assets/scss/variables";
 .MostFaster {

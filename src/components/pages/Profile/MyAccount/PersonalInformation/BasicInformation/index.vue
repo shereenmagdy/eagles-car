@@ -141,7 +141,7 @@ watch(props, (newValue) => {
                   :class="{ 'is-invalid': errors.first_name }"
                 />
 
-                <div class="invalid-feedback">{{ errors.first_name }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.first_name }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
@@ -156,7 +156,7 @@ watch(props, (newValue) => {
                   :class="{ 'is-invalid': errors.last_name }"
                 />
 
-                <div class="invalid-feedback">{{ errors.last_name }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.last_name }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4 selectForm">
@@ -181,7 +181,7 @@ watch(props, (newValue) => {
                 ><img
                   src="@/assets/images/global/icons/global/arrow-down.svg"
                 />
-                <div class="invalid-feedback">{{ errors.nationality_id }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.nationality_id }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
@@ -198,22 +198,22 @@ watch(props, (newValue) => {
                   disabled
                 />
 
-                <div class="invalid-feedback">{{ errors.email }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.email }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
               <SimpleInput>
                 <!-- <label>Email <span class="text-red">*</span> </label> -->
                 <input
-                  type="text"
+                  type="number"
                   id="identity"
                   name="identity"
                   v-bind="identity"
-                  :placeholder="t('ID')"
+                  :placeholder="t('Personal ID')"
                   :class="{ 'is-invalid': errors.identity }"
                 />
 
-                <div class="invalid-feedback">{{ errors.identity }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.identity }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
@@ -228,7 +228,7 @@ watch(props, (newValue) => {
                   :class="{ 'is-invalid': errors.birthday }"
                 />
 
-                <div class="invalid-feedback">{{ errors.birthday }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.birthday }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
@@ -242,10 +242,10 @@ watch(props, (newValue) => {
                   :placeholder="t('Primary_phone_number')"
                   :class="{ 'is-invalid': errors.phone }"
                 />
-
+<!-- 
                 <div class="invalid-feedback">
                   {{ errors.phone }}
-                </div>
+                </div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
@@ -260,9 +260,9 @@ watch(props, (newValue) => {
                   :class="{ 'is-invalid': errors.secondary_phone }"
                 />
 
-                <div class="invalid-feedback">
+                <!-- <div class="invalid-feedback">
                   {{ errors.secondary_phone }}
-                </div>
+                </div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">
@@ -277,7 +277,7 @@ watch(props, (newValue) => {
                   :placeholder="t('Location')"
                   :class="{ 'is-invalid': errors.location }"
                 />
-                <div class="invalid-feedback">{{ errors.location }}</div>
+                <!-- <div class="invalid-feedback">{{ errors.location }}</div> -->
               </SimpleInput>
             </div>
             <div class="col-md-4">

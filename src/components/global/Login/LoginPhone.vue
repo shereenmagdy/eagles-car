@@ -90,7 +90,7 @@ onMounted(() => {
             :placeholder="t('password')"
             required
             v-bind="password"
-            :class="{ 'is-invalid': errors.password }"
+            
           />
           <img
             src="@/assets/images/global/icons/global/eye-svgrepo.svg"
