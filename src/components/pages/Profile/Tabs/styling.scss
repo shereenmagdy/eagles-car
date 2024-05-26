@@ -1,0 +1,114 @@
+.TabProfile,
+.SubTab {
+  padding: 0px;
+  text-align: center;
+  margin: 20px auto 10px;
+  li {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    padding: 10px;
+    .content {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #f3f3f3;
+      background: #f3f3f3;
+      cursor: pointer !important;
+      color: #0a0a68;
+
+      img {
+        margin-right: 10px;
+        cursor: pointer !important;
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+      }
+      .activeImage {
+        display: none;
+      }
+      h5 {
+        color: #0a0a68;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+  li:first-child {
+    padding-left: 0px;
+  }
+  li:last-child {
+    padding-right: 0px;
+  }
+  .active .content,
+  li:hover .content,
+  .subActive .content,
+  li:hover .content {
+    background: white;
+    color: #f4a71d;
+    border: 1px solid;
+    h5 {
+      color: #f4a71d;
+    }
+    .normal {
+      display: none;
+    }
+    .activeImage {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.SubTab {
+  li {
+    width: 25%;
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f3f3f3;
+    }
+  }
+}
+.is-ar {
+  .TabProfile,
+  .SubTab {
+    li:first-child {
+      padding-right: 0px;
+      padding-left: 10px;
+    }
+    li:last-child {
+      padding-left: 0px;
+      padding-right: 10px;
+    }
+  }
+  .SubTab li .content img {
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .TabProfile {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    overflow-y: auto;
+    li {
+      width: 100%;
+      .content {
+        width: 100%;
+      }
+    }
+  }
+  .TabProfile li .content h5,
+  .SubTab li .content h5 {
+    font-size: small;
+  }
+  .SubTab li {
+    width: max-content;
+  }
+  .simple-button.sub_button[data-v-ee6623ad],
+  .simple-button.send {
+    width: max-content !important;
+  }
+}

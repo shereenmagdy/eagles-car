@@ -1,0 +1,154 @@
+.card {
+  position: relative;
+  max-width: 90%;
+  box-shadow: 0px 10px 10px #4b4b4b3d;
+  margin-bottom: 10px;
+  height: auto;
+  z-index: 99;
+  .row.flex {
+    align-items: baseline;
+    height: auto;
+    overflow: hidden;
+    div {
+      width: 19%;
+      label {
+        vertical-align: middle;
+        font-weight: 600;
+        margin-bottom: 10px;
+        img {
+          margin-right: 5px;
+          display: inline-block;
+          vertical-align: unset;
+        }
+      }
+      input {
+        text-align: left;
+        border-radius: 0px;
+        height: 47px;
+      }
+      .form-control {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+      }
+      button {
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 10px 50px 0px #f4a71e69;
+        border-radius: 0px;
+
+        img {
+          margin-right: 5px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          margin: 0px 10px;
+        }
+      }
+    }
+    .Location,
+    .Return_point {
+      width: 25%;
+    }
+    .buttons {
+      width: 10% !important;
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+  .Return-point {
+    cursor: pointer;
+  }
+}
+.withReturn_point {
+  max-width: 55% !important;
+  .row.flex {
+    div {
+      width: 26.2%;
+    }
+    .Location {
+      width: 35%;
+    }
+  }
+}
+.dp--menu-wrapper {
+  position: relative !important;
+  top: auto !important;
+  bottom: 0px !important;
+}
+.dp__arrow_top {
+  display: none;
+}
+.dp__main {
+  width: 100% !important;
+}
+.dp__menu {
+  border: 0px !important;
+}
+.dp__input_icon {
+  top: 20px;
+}
+.dp__clear_icon {
+  top: 20px;
+  right: auto;
+  left: 19px;
+}
+.dp__input {
+  margin: 0px !important;
+  height: 47px;
+  border-radius: 0px;
+}
+.LookingFor .withReturn_point {
+  width: 55% !important;
+  margin: auto;
+}
+/****media****/
+
+@media screen and (max-width: 1210px) {
+  .card,
+  .withReturn_point {
+    width: 95%;
+    margin: initial;
+    .row.flex {
+      flex-direction: column;
+      div,
+      .Location {
+        width: 100%;
+      }
+      .buttons {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    width: 95%;
+    margin: initial;
+  }
+  .FillterHeader {
+    .withReturn_point {
+      max-width: 98% !important;
+    }
+    .tab li {
+      padding: 15px !important;
+    }
+  }
+}
+
+/*ar version */
+.is-ar {
+  .card {
+    .row.flex label img {
+      margin-left: 5px;
+      margin-right: 0px;
+      vertical-align: middle;
+    }
+  }
+  .simple-button {
+    text-align: center;
+  }
+}

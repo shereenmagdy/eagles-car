@@ -1,0 +1,155 @@
+.LightOff {
+  body,
+  .ClientsTestimonials,
+  .accordion-body,
+  .DownloadApp,
+  .form-control,
+  .form-control:focus,
+  input,
+  select,
+  .the_block .card .list > div .content {
+    background: black !important;
+    .header_title,
+    h5,
+    h2,
+    h3,
+    .accordion-body,
+    h4,
+    label,
+    .form-control,
+    input,
+    select,
+    input:focus,
+    select:focus,
+    .form-control:focus,
+    .Fillter .row .choose_Car_condition > div,
+    .the_block .card .list > div .content,
+    div,
+    .Contact_Info .list_contact li a {
+      color: white !important;
+    }
+    ::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+    }
+    .simple-button.send button,
+    .simple-button.send .btn,
+    .simple-button.send_blue button,
+    .simple-button.send_blue .btn,
+    .FAQ .fquestion .accordion-button:not(.collapsed),
+    .the_block .card .title .buttons .rating_number {
+      color: black !important;
+      img {
+        filter: brightness(1) invert(0);
+        -webkit-filter: brightness(0);
+      }
+    }
+    .booking .container .bookingSec .simple-button.send .btn,
+    .the_block .card .title .buttons .rating_number {
+      background: white !important;
+    }
+    .carousel__pagination-button::after {
+      background: #404040 !important;
+    }
+    .carousel__pagination-button:hover::after,
+    .carousel__pagination-button--active::after {
+      background: #716d6e !important;
+    }
+  }
+  body .card,
+  .TabProfile li .content,
+  .specificationsCar .information {
+    background: #212121;
+    h4,
+    label,
+    h6 {
+      color: white !important;
+    }
+  }
+  .TabProfile li .content img,
+  .SubTab li .content img {
+    filter: brightness(1) invert(1);
+    -webkit-filter: brightness(1) invert(1);
+  }
+  .TabProfile .active .content .activeImage,
+  .TabProfile li:hover .content .activeImage,
+  .SubTab .subActive .content .activeImage,
+  .SubTab li:hover .content img {
+    filter: none;
+    -webkit-filter: none;
+  }
+  .TabProfile .active .content,
+  .SubTab li .content,
+  .Promotions,
+  .TabProfile li:hover .content,
+  .simple-input textarea,
+  .Payement,
+  .Account_verified,
+  .Identity_document,
+  .simple-input .upload_file {
+    background: #4d4d4dbf !important;
+    color: white;
+    h6 {
+      color: #b3b3ee;
+    }
+    p {
+      color: white;
+    }
+  }
+  h6 {
+    color: white;
+  }
+  body .form-control:focus {
+    border-color: #f5b235;
+  }
+  .MostFaster .social_media img,
+  .auth-form .main-box .ContinueWith .card,
+  .auth-form .main-box .ContinueWith .card:hover p,
+  .Contact_Info .Social_media_contacts li,
+  .SubTab li .content {
+    background: #141414 !important;
+    color: white !important;
+    border-color: #141414;
+  }
+
+  .auth-form .main-box,
+  .auth-form .main-box,
+  .auth-form .main-box .simple-input input,
+  .auth-form .main-box .simple-input select,
+  .auth-form .tab li p,
+  .tab li,
+  .auth-form .vti__dropdown,
+  .auth-form .vue3-reactive-tel-input,
+  .auth-form .logo_box,
+  .otp-form .main-box .style_otp .otp-input,
+  .FormContact,
+  .FormContact input,
+  .FormContact textarea,
+  .FormContact input:focus,
+  .FormContact textarea:focus,
+  input:focus,
+  textarea:focus,
+  .card .row.flex div .form-control:focus {
+    background: black !important;
+    color: white !important;
+  }
+  .auth-form .tab li p.active {
+    color: #f5b235 !important;
+  }
+  body .the_block .card,
+  .specificationsCar .information {
+    border-color: #141414 !important;
+  }
+  .specificationsCar .priceCar {
+    color: white;
+  }
+  .simple-input input:not([class="vs__search"]):focus,
+  .simple-input textarea:focus {
+    background-color: transparent !important;
+  }
+  .Promotions img {
+    filter: brightness(0) invert(1);
+  }
+  .simple-button.send button.logout {
+    color: white !important;
+  }
+}
