@@ -71,7 +71,7 @@ const routes: Array<RouteRecordRaw> = [
       if (localStorage.getItem("lang") == "ar") {
         document.title = ` الصفحه الرئيسيه - Eagles car`;
       } else {
-        document.title = "Home page - Eagles car";
+        document.title = "caaaaar";
       }
     },
   },
