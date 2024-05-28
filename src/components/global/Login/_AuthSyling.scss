@@ -232,7 +232,12 @@
 .simple-input .vti__dropdown .vti__dropdown-list.below {
   top: -80px !important;
 }
-
+.vti__dropdown-list {
+  background: #575757 !important;
+}
+.vti__dropdown-item.highlighted{
+  background: #9e9e9e !important;
+}
 /*ar version */
 .is-ar {
   .auth-form {

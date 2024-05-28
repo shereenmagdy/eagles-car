@@ -65,10 +65,11 @@ onMounted(() => {
               type="text"
               name="Market_value_your_car"
               v-bind="Featurer1"
-              placeholder="----"
+              placeholder=""
+              required
               :class="{ 'is-invalid': errors.Featurer1 }"
             />
-            <div class="invalid-feedback">{{ errors.Featurer1 }}</div>
+            <!-- <div class="invalid-feedback">{{ errors.Featurer1 }}</div> -->
           </SimpleInput>
         </div>
         <div class="col-md-6 pr-0">
@@ -77,10 +78,11 @@ onMounted(() => {
               type="text"
               name="Market_value_your_car"
               v-bind="Featurer2"
-              placeholder="----"
+              placeholder=""
+              required
               :class="{ 'is-invalid': errors.Featurer2 }"
             />
-            <div class="invalid-feedback">{{ errors.Featurer2 }}</div>
+            <!-- <div class="invalid-feedback">{{ errors.Featurer2 }}</div> -->
           </SimpleInput>
         </div>
         <div class="col-md-6 pr-0">
@@ -89,10 +91,11 @@ onMounted(() => {
               type="text"
               name="Market_value_your_car"
               v-bind="Featurer3"
-              placeholder="----"
+              placeholder=""
+              required
               :class="{ 'is-invalid': errors.Featurer3 }"
             />
-            <div class="invalid-feedback">{{ errors.Featurer3 }}</div>
+            <!-- <div class="invalid-feedback">{{ errors.Featurer3 }}</div> -->
           </SimpleInput>
         </div>
       </div>

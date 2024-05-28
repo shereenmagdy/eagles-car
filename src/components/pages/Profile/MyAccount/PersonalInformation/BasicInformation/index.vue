@@ -220,11 +220,11 @@ watch(props, (newValue) => {
               <SimpleInput>
                 <!-- <label>Email <span class="text-red">*</span> </label> -->
                 <input
-                  type="date"
                   id="birthday"
                   name="birthday"
                   v-bind="birthday"
-                  :placeholder="t('Date_of_birth')"
+                  onfocus="(this.type='date')"
+                  :placeholder="t('Date of birth')"
                   :class="{ 'is-invalid': errors.birthday }"
                 />
 

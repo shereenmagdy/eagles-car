@@ -80,9 +80,9 @@ export const UseProfile = defineStore("Profile", () => {
           ImageProfile.value = Profile.value.user.image.original_url;
         }
       });
-    } else {
-      toast.error("Has Error");
-    }
+    } //else {
+      //toast.error("test");
+    //}
   }
   //Get countries
   async function get_countries() {

@@ -97,6 +97,7 @@ onMounted(() => {
                 name="Expiration_Date"
                 v-bind="country_id"
                 :class="{ 'is-invalid': errors.country_id }"
+                required
               >
                 <option value="" disabled selected>
                   {{ t("Country") }}
@@ -109,9 +110,9 @@ onMounted(() => {
                   {{ country.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">
+              <!-- <div class="invalid-feedback">
                 {{ errors.country_id }}
-              </div>
+              </div> -->
             </SimpleInput>
           </div>
           <!-- <div class="col-md-4 mx-0 px-0">
@@ -157,7 +158,7 @@ onMounted(() => {
                 required
                 :class="{ 'is-invalid': errors.Plate_number }"
               />
-              <div class="invalid-feedback">{{ errors.Plate_number }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Plate_number }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4 mx-0 px-2">
@@ -172,9 +173,9 @@ onMounted(() => {
                 required
                 :class="{ 'is-invalid': errors.License_expiration_date }"
               />
-              <div class="invalid-feedback">
+              <!-- <div class="invalid-feedback">
                 {{ errors.License_expiration_date }}
-              </div>
+              </div> -->
             </SimpleInput>
           </div>
         </div>

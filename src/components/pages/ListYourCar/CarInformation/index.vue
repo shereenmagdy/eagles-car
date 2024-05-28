@@ -111,7 +111,7 @@ onMounted(() => {
                 :class="{ 'is-invalid': errors.Car_title }"
               />
 
-              <div class="invalid-feedback">{{ errors.Car_title }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Car_title }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4">
@@ -134,7 +134,7 @@ onMounted(() => {
                   {{ Brand.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.LastName }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.LastName }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4">
@@ -157,7 +157,7 @@ onMounted(() => {
                   {{ Model.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.Model }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Model }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4 mx-0 px-0">
@@ -179,7 +179,7 @@ onMounted(() => {
                   {{ year.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.years }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.years }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4">
@@ -194,7 +194,7 @@ onMounted(() => {
                 :placeholder="t('Number_Seats')"
                 :class="{ 'is-invalid': errors.Number_Seats }"
               />
-              <div class="invalid-feedback">{{ errors.Number_Seats }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Number_Seats }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4">
@@ -219,7 +219,7 @@ onMounted(() => {
                   {{ Door.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.Number_Doors }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Number_Doors }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4 mx-0 px-0">
@@ -242,7 +242,7 @@ onMounted(() => {
                   {{ FuelType.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.Fuel_Type }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Fuel_Type }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4">
@@ -266,7 +266,7 @@ onMounted(() => {
                   {{ Transmission.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.Transmission }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Transmission }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4">
@@ -280,7 +280,7 @@ onMounted(() => {
                 :class="{ 'is-invalid': errors.Mileage }"
                 :placeholder="t('Mileage')"
               />
-              <div class="invalid-feedback">{{ errors.Transmission }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Transmission }}</div> -->
             </SimpleInput>
           </div>
           <div class="col-md-4 mx-0 px-0">
@@ -304,7 +304,7 @@ onMounted(() => {
                   {{ Color.title }}
                 </option>
               </select>
-              <div class="invalid-feedback">{{ errors.Transmission }}</div>
+              <!-- <div class="invalid-feedback">{{ errors.Transmission }}</div> -->
             </SimpleInput>
           </div>
         </div>
@@ -327,9 +327,9 @@ onMounted(() => {
             >
             </textarea>
 
-            <div class="invalid-feedback">
+            <!-- <div class="invalid-feedback">
               {{ errors.Car_Description_message }}
-            </div>
+            </div> -->
           </SimpleInput>
         </div>
       </div>

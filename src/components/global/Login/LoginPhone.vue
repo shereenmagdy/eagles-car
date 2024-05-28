@@ -90,7 +90,7 @@ onMounted(() => {
             :placeholder="t('password')"
             required
             v-bind="password"
-            
+      
           />
           <img
             src="@/assets/images/global/icons/global/eye-svgrepo.svg"
@@ -137,5 +137,16 @@ onMounted(() => {
   div:last-child {
     width: 100%;
   }
+}
+</style>
+<style scoped>
+/* Example CSS overrides */
+.vue-tel-input input {
+  border: 2px solid #007bff; /* Change border color */
+  padding: 10px; /* Adjust padding */
+}
+
+.vue-tel-input .vue-tel-input__dropdown {
+  background-color: #f8f9fa; /* Change dropdown background color */
 }
 </style>
