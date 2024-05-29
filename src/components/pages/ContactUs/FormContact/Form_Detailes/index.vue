@@ -65,7 +65,7 @@ onMounted(() => {
           </div></SimpleInput
         >
       </div>
-      <div class="row p-0 m-0">
+      <div class="row p-0 m-0 conatct-us-dropdown">
         <div class="col-md-6">
           <vue-tel-input
             v-bind="phone"
