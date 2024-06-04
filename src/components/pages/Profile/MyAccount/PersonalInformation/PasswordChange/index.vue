@@ -4,9 +4,11 @@ import { onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import SimpleInput from "@/components/global/CusomInputs/SimpleInput/SimpleInput.vue";
 import SimpleButton from "@/components/global/Buttons/simpleButton/SimpleButton.vue";
+import deleteBtn from "@/components/global/Buttons/deleteButton/deleteBtn.vue";
 import { useForm } from "vee-validate";
 import * as Yup from "yup";
 import { UseProfile } from "@/stores/Profile/index";
+import type deleteBtnVue from "@/components/global/Buttons/deleteButton/deleteBtn.vue";
 
 //Bloges
 const Profile = UseProfile();
@@ -161,6 +163,8 @@ onMounted(() => {
                   {{ t("wait") }}
                 </button>
               </SimpleButton>
+              <!-- delete account btn component -->
+              <deleteBtn /> 
             </div>
           </div>
         </form>
