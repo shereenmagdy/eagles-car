@@ -4,6 +4,7 @@
     <button @click="confirmDelete">Delete Account</button>
   </div>
 </template>
+
 <script>
 export default {
   name: 'DeleteUserComponent',
@@ -25,14 +26,15 @@ export default {
             // For example: 'Authorization': `Bearer ${your_token}`
           }
         });
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        alert("Account deleted successfully");
-        // Handle successful deletion, e.g., redirect to another page
+        // if (!response.ok) {
+        //   throw new Error('Network response was not ok');
+        // }
+        // alert("Account deleted successfully");
+        // Redirect to the home page
+        this.$router.push('/');
       } catch (error) {
         console.error('There was a problem with the delete request:', error);
-        alert("There was an error deleting the account");
+        // alert("There was an error deleting the account");
       }
     }
   }
@@ -42,11 +44,13 @@ export default {
 <style scoped>
 /* Add any necessary styling for your button */
 button {
-  background-color: red;
-  color: white;
+  background-color: var(--orange-text-color);
+  color: #000;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 button:hover {
