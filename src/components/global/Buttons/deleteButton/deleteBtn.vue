@@ -18,28 +18,38 @@ export default {
     // Method to delete account
     async deleteAccount() {
       try {
-        const response = await fetch(`api/auth/profile`, {
+        const token = localStorage.getItem('access_token');
+        if (!token) {
+          throw new Error('No authentication token found');
+        }
+        const response = await fetch('api/auth/profile', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
-            // Add any necessary headers, such as authentication tokens
-            // For example: 'Authorization': `Bearer ${your_token}`
+            'Authorization': `Bearer ${token}`
           }
         });
+        // Log the entire response for debugging purposes
+        console.log('Response:', response);
+
         // if (!response.ok) {
+        //   const errorData = await response.json();
+        //   console.error('Error response data:', errorData);
         //   throw new Error('Network response was not ok');
         // }
+
         // alert("Account deleted successfully");
         // Redirect to the home page
         this.$router.push('/');
       } catch (error) {
         console.error('There was a problem with the delete request:', error);
-        // alert("There was an error deleting the account");
+        alert("There was an error deleting the account");
       }
     }
   }
 };
 </script>
+
 
 <style scoped>
 /* Add any necessary styling for your button */
