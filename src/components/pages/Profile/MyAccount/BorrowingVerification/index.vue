@@ -32,7 +32,7 @@ onMounted(() => {
       <div class="col-lg-12" v-if="Profile.Profile.user.verification !== 1">
         <div class="Account_verified Account_not_verified">
           <img
-            src="@/assets/images/global/icons/global/profile/verify_error.svg"
+            src="@/assets/images/global/icons/global/profile/notverified.svg"
           />
           <div class="content">
             <div>
@@ -109,6 +109,10 @@ onMounted(() => {
       padding: 0px;
     }
   }
+}
+.Account_verified img{
+  width: 3%;
+    margin-right: 10px;
 }
 .Account_not_verified {
   .content h6 {

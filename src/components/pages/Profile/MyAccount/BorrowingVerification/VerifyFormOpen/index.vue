@@ -245,9 +245,9 @@ onMounted(() => {
         <div class="col-md-12 Identity_document">
           <div class="content">
             <div class="">
-              <h5>{{ t("Identity_document") }}</h5>
-              <p>{{ t("messageIdentity_document") }}</p>
-            </div>
+              <h5>{{ t("Identity face") }}</h5>
+              <p>{{ t("messageIdentity_document") }}</p>           
+ </div>
             <SimpleInput class="upload">
               <SimpleButton type="send" class="">
                 <img
@@ -265,7 +265,7 @@ onMounted(() => {
         <div class="col-md-12 Identity_document">
           <div class="content">
             <div class="">
-              <h5>{{ t("Identity_document") }}</h5>
+              <h5>{{ t("Identity back") }}</h5>
               <p>{{ t("messageIdentity_document") }}</p>
             </div>
             <SimpleInput class="upload">

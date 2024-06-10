@@ -138,7 +138,8 @@ onMounted(() => {
               data-aos-duration="1300"
             >
               <p>
-                {{ t("SendAgain") }} <span class="color-main">(30:00)</span>
+                {{ t("SendAgain") }}
+                 <!-- <span class="color-main">(30:00)</span> -->
               </p>
             </div>
           </div>
